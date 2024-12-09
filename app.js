@@ -1,5 +1,5 @@
-const http = require("http");
-const server = http.createServer((request, response) => {
+import { createServer } from "http";
+createServer((request, response) => {
+response.statusCode = 404;
 response.end("Hello world");
-});
-server.listen(80);
+}).listen(80);
